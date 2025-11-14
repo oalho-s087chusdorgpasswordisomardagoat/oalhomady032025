@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Github</h1>
+    <img src="Images/github.png" alt="Github Remote" />
+    <p>
+      After a commit, go to GitHub and create a repository. Follow the Github
+      provided prompts. Push your existing local repo from your computer
+      terminal.
+    </p>
+    <ul>
+      <li>
+        git remote add origin https://github.com/githubusername/githubrepo.git
+      </li>
+      <li>git branch -M main</li>
+      <li>git push -u origin main</li>
+    </ul>
+    <dl>
+      <dt>
+        git remote add origin https://github.com/githubusername/githubrepo.git
+      </dt>
+      <dd>
+        Add a remote repository (GitHub) to your local repository. Origin is the
+        name of your remote repository. The web address is where you can find
+        the repository on GitHub.
+      </dd>
+      <dt>git branch -M main</dt>
+      <dd>Set the name of the branch to main. The -M is for move/rename.</dd>
+      <dt>git push -u origin main</dt>
+      <dd>
+        Pushes your local main branch to the remote repository named origin.
+      </dd>
+    </dl>
+  </body>
+</html>

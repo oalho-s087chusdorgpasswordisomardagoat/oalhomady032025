@@ -1,0 +1,15 @@
+body {
+    background-color: slategray;
+    padding: 1rem;
+}
+h1 {
+    color: white;
+}
+ul {
+    font-family: cursive;
+}
+/* This is a CSS comment */
+/* ? This is a question comment */
+/* ! WARNING WARNING */
+/* TODO this is a todo comment*/
+/* * This is a regular comment */
