@@ -87,6 +87,18 @@ audio {
   min-height: auto;
   padding: 0; /* let the audio-player control its own spacing */
 }
+#aifooter {
+  background-color: darkslateblue;
+  min-height: auto;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  font-size: 0.875rem;
+}
+#aifooter .container {
+  margin: auto;
+  text-align: center;
+}
 
 /* Custom audio player */
 .audio-player {
