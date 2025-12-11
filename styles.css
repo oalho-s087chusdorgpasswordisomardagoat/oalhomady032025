@@ -99,6 +99,16 @@ audio {
   margin: auto;
   text-align: center;
 }
+@media screen and (min-width: 640px) {
+  #pagecontent {
+    background-color: red;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #pagecontent {
+    background-color: purple;
+  }
+}
 
 /* Custom audio player */
 .audio-player {
