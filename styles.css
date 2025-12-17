@@ -26,6 +26,20 @@ audio {
 #pageheader .container {
   min-height: auto;
 }
+#pageheader nav ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+#pageheader nav ul li {
+  border: 2px solid cornsilk;
+  margin: 2px;
+  padding: 1rem;
+  background-color: thistle;
+}
+#pageheader nav ul :hover {
+  background-color: plum;
+}
 #logo {
   background-image: url(Images/portfoliologo.png);
   width: 6.25rem;
@@ -99,9 +113,15 @@ audio {
   margin: auto;
   text-align: center;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 670px) {
   #pagecontent {
     background-color: red;
+  }
+  #pageheader nav ul {
+    margin-top: 2rem;
+  }
+  #pageheader nav ul li {
+    display: inline-block;
   }
 }
 @media screen and (min-width: 1000px) {
