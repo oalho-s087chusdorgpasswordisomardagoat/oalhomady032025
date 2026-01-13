@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox001</title>
+
+    <style>
+      body {
+        background-color: coral;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      header {
+        min-height: 150px;
+        padding: 16px;
+        background-color: aqua;
+      }
+
+      nav {
+        min-height: 150px;
+        padding: 16px;
+        background-color: lightgreen;
+      }
+
+      div#media {
+        min-height: 150px;
+        padding: 16px;
+        background-color: lightseagreen;
+      }
+
+      main {
+        min-height: 150px;
+        padding: 16px;
+        background-color: lightblue;
+      }
+
+      footer {
+        min-height: 150px;
+        padding: 16px;
+        background-color: lightpink;
+      }
+
+      footer#subfooter {
+        min-height: 150px;
+        padding: 16px;
+        background-color: aqua;
+      }
+
+      @media screen and (min-width: 800px) {
+        body {
+          background-color: blueviolet;
+        }
+        #fb001 {
+          display: flex;
+        }
+        nav {
+          /* flex: 30%; */
+          flex: 1;
+        }
+        main {
+          /* flex: 70%; */
+          flex: 4;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Flexbox001</h1>
+
+    <header>Header</header>
+    <div id="media">Media</div>
+    <div id="fb001">
+      <nav>Nav</nav>
+      <main>Main</main>
+    </div>
+    <footer>Footer</footer>
+    <footer id="subfooter">Subfooter</footer>
+  </body>
+</html>
