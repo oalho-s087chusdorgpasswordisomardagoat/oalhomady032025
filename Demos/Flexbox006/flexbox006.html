@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Wrap - Align-Self</title>
+    <style>
+      h1,
+      h2 {
+        text-align: center;
+      }
+
+      #container001 {
+        border: 5px solid black;
+        background-color: crimson;
+        margin: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        align-content: safe;
+        height: 700px;
+      }
+
+      .box {
+        border: 1px solid black;
+        background-color: lightgreen;
+        min-width: 100px;
+        height: 100px;
+        padding: 0.5rem;
+      }
+
+      @media screen and (min-width: 800px) {
+        body {
+          background-color: lightslategrey;
+        }
+      }
+
+      @media screen and (min-width: 1000px) {
+        body {
+          background-color: brown;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Flexbox</h1>
+    <h2>Flex-Wrap - Align-Content</h2>
+
+    <h2>Container001</h2>
+    <div id="container001">
+      <div class="box">Item001</div>
+      <div class="box">Item002</div>
+      <div class="box">Item003</div>
+      <div class="box">Item004</div>
+      <div class="box">Item005</div>
+      <div class="box">Item006</div>
+      <div class="box">Item007</div>
+      <div class="box">Item008</div>
+    </div>
+  </body>
+</html>
