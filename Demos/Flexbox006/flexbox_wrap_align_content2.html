@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Wrap - Align-Content2</title>
+    <style>
+      h1,
+      h2 {
+        text-align: center;
+      }
+
+      #container001 {
+        border: 5px solid black;
+        background-color: steelblue;
+        margin: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        height: 700px;
+      }
+
+      .box {
+        border: 1px solid black;
+        background-color: rgb(103, 74, 136);
+        width: 100px;
+        height: 100px;
+        padding: 0.5rem;
+      }
+
+      #one {
+        background-color: crimson;
+      }
+
+      #four {
+        background-color: magenta;
+      }
+
+      #seven {
+        background-color: lightseagreen;
+      }
+
+      @media screen and (min-width: 800px) {
+        body {
+          background-color: rgb(15, 77, 139);
+        }
+      }
+
+      @media screen and (min-width: 1000px) {
+        body {
+          background-color: rgb(29, 198, 210);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Flexbox</h1>
+    <h2>Flex-Wrap - Align-Content2</h2>
+
+    <h2>Container001</h2>
+    <div id="container001">
+      <div class="box" id="one">Item001</div>
+      <div class="box">Item002</div>
+      <div class="box">Item003</div>
+      <div class="box" id="four">Item004</div>
+      <div class="box">Item005</div>
+      <div class="box">Item006</div>
+      <div class="box" id="seven">Item007</div>
+      <div class="box">Item008</div>
+      <div class="box">Item009</div>
+      <div class="box">Item010</div>
+    </div>
+  </body>
+</html>
