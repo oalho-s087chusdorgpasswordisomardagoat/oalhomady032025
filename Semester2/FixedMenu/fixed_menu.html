@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixed Menu</title>
+    <style>
+      /* Mobile First  */
+      html {
+        scroll-behavior: smooth;
+        height: 200%;
+      }
+      body {
+        background-color: dodgerblue;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      /* !Delete !!!!!!!!!!
+      #logoheader {
+        background-color: aqua;
+      } */
+
+      /* Pageheader items */
+      #pageheader {
+        background-color: rebeccapurple;
+        padding: 1rem;
+        /* Default */
+        position: static;
+      }
+      #pageheader h1 {
+        text-align: center;
+        background-color: orchid;
+        color: springgreen;
+      }
+      #pageheader nav {
+        background-color: aqua;
+        padding: 0.5rem;
+        border-radius: 10px;
+      }
+      #pageheader ul {
+        background-color: cadetblue;
+        padding: 0.5rem;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+      }
+      #pageheader li {
+        text-align: center;
+        padding: 1rem;
+        background-color: chartreuse;
+        border: 1px solid palevioletred;
+      }
+      #pageheader a {
+        color: peachpuff;
+        text-decoration: none;
+      }
+      /* Non pageheader items */
+
+      main {
+        padding: 1rem;
+      }
+      h2 {
+        color: maroon;
+      }
+      #logo {
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: auto;
+      }
+      p {
+        line-height: 1.5;
+        color: #555;
+      }
+      /* Tablet/Desktop CSS */
+      @media screen and (min-width: 650px) {
+        body {
+          background-color: slategray;
+        }
+        #pageheader {
+          position: fixed;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          /* Flexbox components */
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        #logoheader {
+          display: flex;
+        }
+        #pageheader nav {
+          min-width: 200px;
+        }
+        #pageheader ul {
+          flex-direction: row;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="pageheader">
+      <div id="logoheader">
+        <img id="logo" src="paws_logo.png" alt="paws logo" />
+        <h1>Paws and Whiskers</h1>
+      </div>
+      <!-- End the logo and header -->
+
+      <!-- Start Navigation -->
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Our Pets</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+      <!-- End Navigation -->
+    </header>
+    <main>
+      <h2>Fixed Menu</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+        voluptas laudantium numquam nulla dolorum porro enim vel sint dicta
+        fugiat neque beatae optio magni tenetur odio doloremque est repudiandae
+        totam, in saepe incidunt harum repellendus! Accusamus non laboriosam
+        laudantium expedita autem molestiae voluptatibus doloribus sit similique
+        quaerat fuga, totam minima modi enim magni eum sint sapiente, repellat
+        laborum repudiandae asperiores. Illum, asperiores. Dolore culpa
+        voluptatum aut, similique odit modi dicta esse enim porro inventore hic
+        sed harum, in sint est?
+      </p>
+    </main>
+    <footer>
+      <p>&copy; Omart Productions</p>
+    </footer>
+  </body>
+</html>
