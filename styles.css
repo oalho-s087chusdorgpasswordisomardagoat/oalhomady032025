@@ -4,8 +4,14 @@ html {
 body {
   background: linear-gradient(135deg, #0f172a 0%, #001219 100%);
   color: #e6eef8;
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial;
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial;
 }
 audio {
   display: none; /* hide native control */
@@ -53,7 +59,9 @@ audio {
   background-color: lightblue;
   min-height: 20rem;
   padding: 1rem;
-  background-image: url(Images/social-media.webp);
+  background-image:
+    linear-gradient(rgba(255, 0, 0, 0.6), rgba(0, 0, 255, 0.6)),
+    url(Images/social-media.webp);
   background-position: center;
   background-size: cover;
 }
@@ -143,7 +151,8 @@ audio {
   );
   border-radius: 14px;
   padding: 14px 18px;
-  box-shadow: 0 6px 22px rgba(2, 6, 23, 0.6),
+  box-shadow:
+    0 6px 22px rgba(2, 6, 23, 0.6),
     inset 0 1px 0 rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(6px) saturate(110%);
   border: 1px solid rgba(255, 255, 255, 0.06);
