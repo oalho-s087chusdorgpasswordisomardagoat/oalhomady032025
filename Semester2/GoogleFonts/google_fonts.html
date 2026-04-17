@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>It's a Dog's Life</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gluten:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        color: white;
+      }
+      header {
+        background-color: #052524;
+        padding: 15px 30px 15px 30px;
+        border-bottom: 5px solid white;
+      }
+      header h1 {
+        font-size: 1.5rem;
+      }
+      /* Hero Section */
+      .hero {
+        height: 85vh;
+        background-color: #052524;
+        /* background-image: linear-gradient(red, blue); */
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url(Images/dog_on_couch.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .hero-content h2 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+      .hero-content p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      .hero-content a {
+        display: inline-block;
+        padding: 12px 24px 12px 24px;
+        background-color: orangered;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+      }
+      .hero-content a:hover {
+        background-color: rgb(255, 97, 39);
+      }
+      .intro-content {
+        background-color: white;
+        color: #333;
+        padding: 1rem 1.5rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        line-height: 1.5;
+        border-radius: 10px;
+      }
+      /* Cards */
+      .services {
+        padding: 50px 30px;
+        background-color: black;
+      }
+      .services h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 2rem;
+      }
+      .fb-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+      }
+      .card {
+        background-color: white;
+        color: #333;
+        border: 5px solid silver;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        max-width: 300px;
+      }
+      .card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      .card p {
+        margin-bottom: 1rem;
+      }
+      .card a {
+        display: inline-block;
+        padding: 12px 24px 12px 24px;
+        background-color: orangered;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+      }
+      .card a:hover {
+        background-color: rgb(255, 97, 39);
+      }
+      /* Footer boi */
+      footer {
+        background-color: #052524;
+        padding: 20px;
+        border-top: 5px solid white;
+        text-align: center;
+      }
+      /* Google Fonts */
+
+      .gluten-headers {
+        font-family: "Gluten", cursive;
+        font-optical-sizing: auto;
+        font-weight: 450;
+        font-style: normal;
+        font-variation-settings: "slnt" 0;
+      }
+      .gantari-body {
+        font-family: "Gantari", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 550;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="gluten-headers">It's a Dog's Life</h1>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h2 class="gluten-headers">Welcome to It's a Dog's Life</h2>
+          <p class="gantari-body">We love dogs more than humans.</p>
+          <a href="#">Get Started</a>
+        </div>
+      </section>
+
+      <section class="intro">
+        <div class="intro-content">
+          <h2 class="gluten-headers">About Us</h2>
+          <p class="gantari-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            quasi omnis non delectus quos dolore officia excepturi molestias
+            doloremque. Ipsam a minus in perspiciatis quisquam saepe eos
+            aspernatur consequuntur repellendus, error molestias deserunt. Non
+            architecto voluptate consectetur voluptatum officia fugit blanditiis
+            asperiores! Earum ea necessitatibus placeat repellat exercitationem
+            magni! Enim.
+          </p>
+        </div>
+      </section>
+
+      <section class="services">
+        <h2 class="gluten-headers">Our Services</h2>
+        <div class="fb-cards">
+          <div class="card">
+            <h3 class="gluten-headers">Card One</h3>
+            <p class="gantari-body">This is a card. Add a short description.</p>
+            <a href="#">Read More</a>
+          </div>
+          <div class="card">
+            <h3 class="gluten-headers">Card Two</h3>
+            <p class="gantari-body">This is a card. Add a short description.</p>
+            <a href="#">Read More</a>
+          </div>
+          <div class="card">
+            <h3 class="gluten-headers">Card Three</h3>
+            <p class="gantari-body">This is a card. Add a short description.</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 It's a Dog's Life. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
