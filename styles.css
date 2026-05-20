@@ -1,8 +1,6 @@
 html {
   scroll-behavior: smooth;
 }
-/* body uses Gluten (loaded above) */
-/* body uses Gluten (loaded above) */
 body {
   font-family:
     "Gluten",
@@ -17,23 +15,22 @@ body {
   margin: 0;
   line-height: 1.7;
 }
-
-/* headers use Flavors */
 h1,
 h2,
 h3 {
   font-family: "Flavors", cursive;
   margin: 0.5rem 0;
 }
-
-/* user-provided flavors class for headers or other elements */
 .flavors-regular {
   font-family: "Flavors", cursive;
   font-weight: 400;
   font-style: normal;
 }
 audio {
-  display: none; /* hide native control */
+  display: none;
+}
+i {
+  font-size: 1.3rem;
 }
 .container {
   max-width: 80rem;
@@ -69,7 +66,7 @@ audio {
   background-image: url(Images/portfoliologo.png);
   width: 6.25rem;
   height: 6.25rem;
-  border: 1px solid black;
+  border: 3px dashed red;
   border-radius: 50%;
   background-position: center;
   background-size: contain;
@@ -106,6 +103,18 @@ audio {
   min-height: 10rem;
   padding: 1rem;
 }
+#worksamples {
+  background-color: skyblue;
+  min-height: 10rem;
+  padding: 1rem;
+  list-style: none;
+}
+#certificates {
+  background-color: orchid;
+  min-height: 10rem;
+  padding: 1rem;
+  list-style: none;
+}
 #pagefooter {
   background-color: rebeccapurple;
   min-height: 10rem;
@@ -128,7 +137,7 @@ audio {
 #subfooter .container {
   background: transparent;
   min-height: auto;
-  padding: 0; /* let the audio-player control its own spacing */
+  padding: 0;
 }
 #aifooter {
   background-color: darkslateblue;
@@ -162,7 +171,7 @@ audio {
   }
 }
 
-/* Custom audio player */
+/* * Custom audio player */
 .audio-player {
   width: min(880px, 96%);
   display: flex;
